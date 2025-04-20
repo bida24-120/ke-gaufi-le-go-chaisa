@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f5f0; /* Warm neutral background */
+}
+
+/* Header Styles */
+.header {
+    background-color: #2a5a3a; /* Earthy green */
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.store-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.store-motto {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 0.5rem 0 0;
+    color: #d4e8d9;
+}
+
+/* Navigation Styles */
+.main-nav {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    display: block;
+    padding: 1.2rem 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #2a5a3a;
+    background-color: #f0f7f1;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: #2a5a3a;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.donate {
+    background-color: #e74c3c;
+    color: white !important;
+    margin-left: 1rem;
+    border-radius: 4px;
+}
+
+.donate:hover {
+    background-color: #c0392b;
+}
+
+.donate:after {
+    display: none;
+}
+
+/* Main Content Styles */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #2a5a3a;
+    margin-bottom: 1rem;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: #555;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #2a5a3a;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1e422b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #2a5a3a;
+    color: white;
+    margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-wrap: wrap;
+    }
+    
+    .nav-link {
+        padding: 0.8rem 1rem;
+    }
+    
+    .store-name {
+        font-size: 2.2rem;
+    }
+    
+    .store-motto {
+        font-size: 1.2rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+}
